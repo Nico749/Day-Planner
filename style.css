@@ -53,24 +53,23 @@ textarea {
 }
 
 .saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border: 1px solid black;
+  border-radius: 15px;
+
   background-color: #06aed5;
   color: white;
+  
+  width:44px;
+  height:30px;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
-button{
-   width:60px;
-   height:30px;
- }
-
- .hour{
-   background-color: #ff6961;
+.hour{
+   background-color:beige;
    color: #000000;
    border-top: 1px dashed #000000;
  }
+

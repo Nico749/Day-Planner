@@ -137,37 +137,35 @@ myBtn13.addEventListener("click",function(event){
 })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//var eight=document.getElementById("ciao1").innerHTML
-var value =20
+//assign a color based on if the time is past/present/future
+var row=$('tr')
+var hourArray=[]
 var time=moment().format("H")
-if (time>value){
 
-$("#firstrow,#secondrow").addClass("future")
-$("#hour").css("background-color","yellow")
-$("#hour1").css("background-color","yellow")
-//$("#8").addClass("saveBtn")
-//$("#8,#9,#10,#11,#12,#13,#14,#15,#16,#17,#18,#19,#20,#21,#22,#23").addClass("saveBtn ")
-
+function GetCellValues() {
+    var table = document.getElementById('mytable');
+    
+    //iterate over the table
+    for (var r = 0, n = table.rows.length; r < n; r++) {
+        for (var c = 0, m = table.rows[r].cells.length; c < m; c++) {}
+        hourArray.push(table.rows[r].cells[0].innerHTML);
+        console.log(hourArray[r])
+        
+        if(hourArray[r]<time){console.log("yes")
+                            row.eq(r).addClass("past")}
+        else if (hourArray[r]==time) {console.log("equal")
+                                    row.eq(r).addClass("present")} 
+        else {console.log("no")
+              row.eq(r).addClass("future")}}
 }
+
+
+GetCellValues()
+
+
+
+
+
 
 
 
