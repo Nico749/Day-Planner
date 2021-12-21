@@ -9,7 +9,7 @@
 * [Contact Me](#contact-me)
 
 ## General info
-The application allows a user to digit task for a particular hour in the calendar and save them so even if they close or refresh the application, the data would be storaged. Moreover, rows are colored differently based on if that specific hour is before the actual time, the same or after.
+The application allows a user to insert a task for a particular hour in the calendar and save them so even if they close or refresh the application, the data would be storaged. Moreover, rows are colored differently based on if that specific hour is before the actual time, the same or after.
 
 
 ## Technologies
@@ -28,7 +28,8 @@ Project is created with:
 
 ## Room for Improvement
 Room for improvement:
-* Code refactoring necessary
+* Code refactor
+* Style
 
 ## Contact me 
 Created by [Nico Pasqualini](https://nico749.github.io/Personal-portfolio-/) - feel free to contact me!

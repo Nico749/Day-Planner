@@ -3,6 +3,7 @@ var day =document.getElementById("currentDay")
 var actualDay=moment().format("Do MMMM YYYY")
 day.textContent=actualDay   
 
+//hours section
 //first hour
 var textArea1=document.querySelector("#task1")
     textArea1.value=localStorage.getItem("Description1")
@@ -43,6 +44,7 @@ var textArea12=document.querySelector("#task12")
 var textArea13=document.querySelector("#task13")
     textArea13.value=localStorage.getItem("Description13")
 
+//buttons section
 //first button
 var myBtn1=document.getElementById("save1")
 myBtn1.addEventListener("click",function(event){
