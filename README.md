@@ -9,7 +9,7 @@
 * [Contact Me](#contact-me)
 
 ## General info
-
+The application allows a user to digit task for a particular hour in the calendar and save them so even if they close or refresh the application, the data would be storaged. Moreover, rows are colored differently based on if that specific hour is before the actual time, the same or after.
 
 
 ## Technologies
