@@ -70,6 +70,7 @@ textarea {
 .hour{
    background-color:beige;
    color: #000000;
-   border-top: 1px dashed #000000;
+   border-top: 5px dashed #000000;
+   text-align: center;
  }
 

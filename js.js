@@ -140,25 +140,21 @@ myBtn13.addEventListener("click",function(event){
 //assign a color based on if the time is past/present/future
 var row=$('tr')
 var hourArray=[]
-var time=moment().format("H")
+var time=Number(moment().format("H"))
+var table = document.getElementById('mytable');
 
+//iterate over the table
 function GetCellValues() {
-    var table = document.getElementById('mytable');
-    
-    //iterate over the table
     for (var r = 0, n = table.rows.length; r < n; r++) {
         for (var c = 0, m = table.rows[r].cells.length; c < m; c++) {}
         hourArray.push(table.rows[r].cells[0].innerHTML);
-        console.log(hourArray[r])
+//comparing time with the hours
+        if(hourArray[r]<time){row.eq(r).addClass("past")}
         
-        if(hourArray[r]<time){console.log("yes")
-                            row.eq(r).addClass("past")}
-        else if (hourArray[r]==time) {console.log("equal")
-                                    row.eq(r).addClass("present")} 
-        else {console.log("no")
-              row.eq(r).addClass("future")}}
+        else if (hourArray[r]==time) {row.eq(r).addClass("present")} 
+        
+        else {row.eq(r).addClass("future")}}
 }
-
 
 GetCellValues()
 
