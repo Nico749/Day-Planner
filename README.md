@@ -21,7 +21,7 @@ Project is created with:
 * Bootstrap
 
 ## Demo
-<a href="http://127.0.0.1:5500/index.html" target="_blank">Demo</a>
+<a href="https://nico749.github.io/Day-Planner/" target="_blank">Demo</a>
 
 ## Project Status
 * Complete
